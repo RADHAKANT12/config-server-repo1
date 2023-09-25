@@ -14,7 +14,12 @@ spring:
       ddl-auto: update
       generate-ddl: true
       show-sql: true
-  boot.message: Hello sir,location Service     
+  boot.message: Hello sir,location Service    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
 
 eureka:
   instance:
