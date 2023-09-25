@@ -14,7 +14,7 @@ spring:
       ddl-auto: update
       generate-ddl: true
       show-sql: true
-  boot.message: Hello sir,location updated Service    
+  boot.message: Hello sir,location updatedd Service    
 management:
   endpoints:
     web:
