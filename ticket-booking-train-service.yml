@@ -35,4 +35,17 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+resilience4j:
+  circuitbreaker:
+    instances:
+      TICKET-BOOKING-TRAIN-SERVICE:
+        registerHealthIndicator: true
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED 
+
 
