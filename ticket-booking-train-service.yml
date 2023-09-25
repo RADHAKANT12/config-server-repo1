@@ -21,13 +21,7 @@ management:
   tracing:
     sampling:
       probability: 1.0      
-  endpoints:
-    web:
-      exposure:
-        include: health
-  endpoint:
-    health:
-      show-details: always    
+      
 
 eureka:
   instance:
